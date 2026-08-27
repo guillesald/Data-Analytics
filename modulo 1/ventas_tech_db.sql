@@ -52,7 +52,7 @@ CREATE TABLE ventas (
 );
 GO
 
--- 4. INSERT DATA 
+-- 4. INSERT  
 INSERT INTO categorias (id_categoria, nombre_categoria, descripcion) VALUES
 (1, 'Computación', 'Laptops, PCs y monitores'),
 (2, 'Accesorios', 'Periféricos y complementos'),
