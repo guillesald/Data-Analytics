@@ -92,3 +92,16 @@ FROM (
 ) AS consolidado
 GROUP BY canal;
 GO
+
+
+-- ============================================
+-- Hallazgos
+-- ============================================
+-- 1. Los clientes están repartidos en 5 ciudades distintas: Buenos Aires,
+--    Córdoba, Rosario, Mendoza y Tucumán.
+-- 2. Las consultas 2 y 3 no devuelven resultados: todos los clientes y
+--    productos cargados ya tienen al menos una venta asociada. Vale la
+--    pena revisar esto de nuevo cuando sume más datos.
+-- 3. El consolidado por canal quedó parejo (5 y 5), pero usé un criterio
+--    inventado (id_venta par/impar) porque todavía no tengo un dato real
+--    de canal en la base.
